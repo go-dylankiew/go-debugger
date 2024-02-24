@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [{
+        "name": "Go Containerized Debug",
+        "type": "go",
+        "request": "attach",
+        "debugAdapter": "dlv-dap",
+        "mode": "remote",
+        "substitutePath": [
+            {
+                "from": "${workspaceFolder}",
+                "to": "/app"
+            }
+        ],
+        "port": 4000,
+        "host": "127.0.0.1"
+    }]
+}
